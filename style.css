@@ -113,11 +113,16 @@ color: hsl(243, 87%, 12%);
   height: 36px;
   border-radius: 4px;
   padding: auto;
-  background-color:  hsl(224, 93%, 58%);
+  background-color: hsl(224, 93%, 58%);
   color: white;
   border: none;
   box-shadow: 0 4px 8px 0 hsl(0, 6%, 86%), 0 6px 20px 0 hsl(0, 6%, 86%);
- 
+}
+
+button:hover {
+  background-color: #6B9BFF;
+  color: white; 
+  cursor: pointer;
 }
   
 
@@ -170,24 +175,43 @@ color: hsl(243, 87%, 12%);
 
   .left-box button{
     border: none;
-    padding: 2px;
+    /* padding: 2px; */
     font-size: 12px;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
-    border-bottom: 1px solid hsl(170, 45%, 43%);
-    color: hsl(170, 45%, 43%);
+    /* border-bottom: 1px solid hsl(170, 45%, 43%); */
+    color: #3A9685;
     margin-top: 12px ;
     background-color: transparent;
-
   }
+  
   .left-box img{
     padding: 2px;
     margin-top: 12px ;
   }
   .newsection-CTA{
+    width: fit-content;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
   }
+
+  .newsection-CTA:hover{
+    width: fit-content;
+    border-bottom: 1px solid #81D9C9;
+    color: #81D9C9;
+    fill: #81D9C9;
+    cursor: pointer;
+  }
+
+  .newsection-CTA button:hover{
+    color: #81D9C9;
+  }
+/* 
+  .changemyfill:hover{
+    filter: invert(95%) sepia(72%) saturate(588%) hue-rotate(88deg) brightness(99%) contrast(71%);
+    color: white;
+  } */
 
   .testimonial{
     width: 280px;
@@ -294,6 +318,13 @@ color: hsl(243, 87%, 12%);
     font-family: "Raleway", sans-serif;
   }
 
+  .first-New-section2-CTA button:hover{
+    
+      background-color: #6B9BFF;
+      color: white; 
+      cursor: pointer;
+  
+  }
 
   /* footer style */
   .footer{
