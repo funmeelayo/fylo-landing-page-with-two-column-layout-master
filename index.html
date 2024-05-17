@@ -36,16 +36,17 @@
     Access them wherever you need, share and collaborate with friends, 
     family, and co-workers.</p>
     <div class="hero-CTA">
-    
-      <input type="text"  name="emailField" id="emailField" required  placeholder="Enter your Email...">
-      <button>Get Started</button>
-      
+    <form action="">
+      <input type="text" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" id="email"   placeholder="Enter your Email..." required>
+      <input id="submit" type="submit" value="Get Started">
+     
+    </form>
     
     </div>
  </div>
- <div >
-   <img class="hero-image" src="./images/illustration-1.svg" alt="">
- </div>
+<div  class="hero-div">
+  <img class="hero-image" src="./images/illustration-1.svg" alt="">
+  </div>
 </section>
 
 <!-- New section -->
@@ -78,7 +79,7 @@
      </div>
     </div>
   </div>
-  <div >
+  <div class="right-box-div">
     <img class="right-box" src="./images/illustration-2.svg" alt="illustration 2">
   </div>
 </section>
@@ -93,26 +94,30 @@
     If you have any questions, our support team would be happy to help you.</p>
   </div>
   <div class="first-New-section2-CTA">
-    <input type="text" placeholder="email@example.com">
-    <button>Get Started For Free</button>
+    <form action="">
+      <input type="text" name="emailField" id="emailField" placeholder="email@example.com" required>
+      <input id="submit2" type="submit" value="Get Started for free">
+      <!-- <button>Get Started For Free</button> -->
+    </form>
   </div>
 </section>
 </div>
 
+
 <!-- Footer -->
 <div class="footer">
 <footer>
-    <img class="footer-image" width="130px" height="60px" src="./images/white logo 1.svg" alt="footerlogo">
+    <img class="footer-image" width="15%" height="50%" src="./images/white logo 1.svg" alt="footerlogo">
     <!-- <div class="Contact-footer"> -->
     <div class="footer-links">
         <div class="Contact-footer">
           <div class="phone">
               <img width="16px" height="16px" src="./images/icon-phone.svg" alt="phoneicon">
-              <p>Phone: +1-543-123-4567</p>
+              <p class="phonep">Phone: +1-543-123-4567</p>
           </div>
           <div class="email">
               <img width="16px" height="16px" src="./images/icon-email.svg" alt="emailicon">
-              <p>example@fylo.com</p>
+              <p class="">example@fylo.com</p>
           </div>
         </div>
 

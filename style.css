@@ -8,20 +8,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 1440px;
+  
 }
-.attribution { 
+/* .attribution { 
   font-size: 11px; text-align: center; }
 .attribution a {
    color: hsl(228, 45%, 44%); }
-  
+   */
 
 /* body{
   width: 100%;
   max-width: 1440px;
   margin: 10px auto;
 } */
-
+body{
+  max-width: 1440px;
+} 
 /* Navigation */
 nav{
     display: flex;
@@ -32,6 +34,7 @@ nav{
     font-family: "Raleway", sans-serif;
     font-weight:400;
     font-size: 16px;
+    max-width: 1440px;
 }
 
 nav img{
@@ -64,15 +67,15 @@ nav ul a{
   margin: 80px auto;
 }
 .hero-text{
-  width: 100%;
-  max-width: 640px;
+  /* width: 640px; */
+  max-width: 50%;
   font-family: "Raleway", sans-serif;
 }
   
 
 .Hero-section h1{
 font-size: 36px;
-width: 540px;
+width: 100%;
 font-weight: 700;
 line-height: 48px; 
 color: hsl(243, 87%, 12%);
@@ -82,49 +85,102 @@ color: hsl(243, 87%, 12%);
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  width: 540px;
+  width: 94%;
   margin-top: 16px;
   color: hsl(243, 87%, 12%);
 }
 
 
 .hero-image{
-  width: 100%;
-  max-width: 640px;
+  /* width: 640px; */
+  max-width:100%;
+}
+
+.hero-div{
+  max-width: 100%;
 }
 
 .hero-CTA{
-  width:480px;
+  width: 80%;
+}
+
+.hero-CTA form{
+  
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: space-between;
   margin-top:16px ;
   font-family: "Raleway", sans-serif
 }
+
+
 .hero-text input{
-  width: 290px;
+  width: 65%;
   height: 36px;
   padding: 12px;
   border-radius: 4px;
-  border: 1px solid hsl(243, 87%, 12%);
+  border: none;
+  border: 1px solid hsl(243, 87%, 12%); 
+  
+  
 }
-.hero-text button{
-  width: 170px;
+
+
+/* input[type=text]:focus {
+  border: 1px solid hsl(240, 2%, 18%);
+} */
+
+/* input[type="email"]:invalid {
+  border: 2px solid red;
+} */
+
+/*Display an error message using the ::after pseudo-element
+input[type="email"]:invalid::after {
+  content: ' Please enter a valid email address.';
+  color: red;
+  display: block;
+  margin-top: 5px;
+  font-size: 0.875em;
+}
+/* Optional: Style the form to ensure the pseudo-element doesn't cause layout issues */
+/* form {
+  position: relative;
+} */
+
+/* Style the input field to position the error message correctly */
+/* input[type="email"] {
+  display: block;
+  margin-bottom: 1em;
+ } */ 
+
+
+
+
+/* .hero-text button{ */
+  #submit{
+  width: 30%;
   height: 36px;
+  border: none;
   border-radius: 4px;
   padding: auto;
   background-color: hsl(224, 93%, 58%);
   color: white;
-  border: none;
   box-shadow: 0 4px 8px 0 hsl(0, 6%, 86%), 0 6px 20px 0 hsl(0, 6%, 86%);
 }
 
-button:hover {
+
+#submit:hover {
   background-color: #6B9BFF;
   color: white; 
   cursor: pointer;
 }
   
+
+/* .error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}  */
 
 /* New section */
 .New_section{
@@ -135,22 +191,27 @@ button:hover {
   margin: 80px auto;
   
 }
+
+
+
+
 .for-bg{
   background-image: url('images/bg-curve-desktop.svg');
   background-repeat: no-repeat; 
   background-size: cover;
   background-position: center ;
   height: 580px;
+  width: 100%;
 }
 .left-box{
-  width: 100%;
-  max-width: 640px;
+  /* width: 100%; */
+  max-width: 50%;
 }
 
 
 .left-box h1{
   font-size: 32px;
-  width: 540px;
+  width: 100%;
   font-weight: 700;
   line-height: 48px; 
   color: hsl(243, 87%, 12%);
@@ -161,16 +222,20 @@ button:hover {
     font-size: 12px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    width: 410px;
+    width: 72%;
     margin-top: 16px;
     color: hsl(243, 87%, 12%);
   }
 
 
   .right-box{
-    width: 100%;
-    max-width: 640px;
+    /* width: 100%; */
+    max-width: 100%;
     margin-top: 100px;
+  }
+
+  .right-box-div{
+    max-width: 50%;
   }
 
   .left-box button{
@@ -200,8 +265,9 @@ button:hover {
     width: fit-content;
     border-bottom: 1px solid #81D9C9;
     color: #81D9C9;
-    fill: #81D9C9;
+    /* fill: #81D9C9; */
     cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(99%) sepia(17%) saturate(3704%) hue-rotate(150deg) brightness(89%) contrast(75%);
   }
 
   .newsection-CTA button:hover{
@@ -214,7 +280,7 @@ button:hover {
   } */
 
   .testimonial{
-    width: 280px;
+    width: 50%;
     background-color:  hsl(0, 0%, 100%);
     margin-top: 32px;
     border-radius: 4px;
@@ -228,7 +294,7 @@ button:hover {
     margin-top: 16px ;
   }
   .testimonial p{
-    width: 250px;
+    width: 100%;
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
@@ -244,6 +310,7 @@ button:hover {
     font-size: 12px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
+    width: 80%;
   }
 
 
@@ -252,6 +319,7 @@ button:hover {
     font-size: 12px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
+    width: 100%;
   }
 
   .New-section-2{
@@ -260,6 +328,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
   }
 
   .new-bg{
@@ -269,18 +338,25 @@ button:hover {
     align-items: center;
     justify-content: space-between;
   }
+.first-New-section2{
+  width: 45%;
+}
 
+.first-New-section2-CTA{
+  width: 45%;
+}
   .first-New-section2 h2{
     color: white;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 28px;
     font-weight: 700;
+    width: 100%;
   }
 
   .first-New-section2 p{
     margin-top: 16px;
-    width: 380px;
+    width: 75%;
     color: white;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -288,13 +364,15 @@ button:hover {
     line-height: 20px;
   }
 
-  .first-New-section2-CTA{
+  .first-New-section2-CTA form{
     display: flex;
     flex-direction: column;
+  
+    
   }
 
   .first-New-section2-CTA input{
-    width: 480px;
+    width: 90%;
     height: 40px;
     border-radius: 4px;
     border: none;
@@ -306,19 +384,25 @@ button:hover {
     font-size: 12px;
     font-family: "Open Sans", sans-serif;
   }
-  .first-New-section2-CTA button{
-    width: 170px;
+  #submit2{
+    width: 40%;
     height: 36px;
     border-radius: 4px;
-    padding: auto;
     background-color:  hsl(224, 93%, 58%);
     color: white;
     border: none;
-    margin-top: 12px;
+    margin-top: 12px; 
     font-family: "Raleway", sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
   }
 
-  .first-New-section2-CTA button:hover{
+
+
+
+
+  #submit2:hover{
     
       background-color: #6B9BFF;
       color: white; 
@@ -352,8 +436,9 @@ button:hover {
     display: flex;
     align-items: top;
     justify-content: space-between;
-    padding-right: 180px;
+    padding-right: 24px;
     margin-top: 12px;
+    width: 100%;
   }
 
   .phone, .email{
@@ -361,11 +446,19 @@ button:hover {
     align-items: center;
     gap: 12px;
     color: white;
+    width: 80%;
   }
   .email{
     margin-top: 12px;
   }
   
+div.Contact-footer , div.First-set-of-links , div.second-set-of-links , div.social-media-links{
+  width: 25%;
+}
+
+.phonep{
+width: 100%;
+}
 
   .footer-links li {
     list-style: none; 
@@ -380,8 +473,17 @@ button:hover {
   .social-media-links{
     display: flex;
     gap: 16px;
-  }    
+  }   
+  
+  
+  .footer-links a:hover{
+    color: #648DED ;
+  }
 
+  .social-media-links img:hover{
+    filter: invert(55%) sepia(30%) saturate(921%) hue-rotate(185deg) brightness(94%) contrast(98%);
+    cursor: pointer;
+  }  
 
 
   /* mobile screeen */
