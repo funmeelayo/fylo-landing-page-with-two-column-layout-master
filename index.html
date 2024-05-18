@@ -35,12 +35,16 @@
    <p>Fylo stores your most important files in one secure location. 
     Access them wherever you need, share and collaborate with friends, 
     family, and co-workers.</p>
+    
     <div class="hero-CTA">
-    <form action="">
-      <input type="text" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" id="email"   placeholder="Enter your Email..." required>
+    <form action="#"> 
+      <div class="spanposition">
+        <input type="text" spellcheck="false"  id="emailField"  placeholder="Enter your Email..." onkeyup="validateEmail()" >
+        <span id="emailError"></span>
+     </div>
       <input id="submit" type="submit" value="Get Started">
      
-    </form>
+    </form> 
     
     </div>
  </div>
@@ -94,11 +98,15 @@
     If you have any questions, our support team would be happy to help you.</p>
   </div>
   <div class="first-New-section2-CTA">
-    <form action="">
-      <input type="text" name="emailField" id="emailField" placeholder="email@example.com" required>
+    <form action="#">
+      <input type="text" spellcheck="false"  id="emailField2"  placeholder="Enter your Email..." onkeyup="validateEmail2()" >
+      <span id="emailError2"></span>
       <input id="submit2" type="submit" value="Get Started for free">
-      <!-- <button>Get Started For Free</button> -->
+      
     </form>
+
+      
+      </div>
   </div>
 </section>
 </div>
@@ -155,5 +163,43 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </section> -->
+
+  <script>
+
+    var emailError= document.getElementById("emailError");
+    var emailField= document.getElementById("emailField");
+    var emailError2= document.getElementById("emailError2");
+    var emailField2= document.getElementById("emailField2");
+
+    function validateEmail(){
+      var emailError= document.getElementById("emailError");
+    var emailField= document.getElementById("emailField");
+      if(!emailField.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+
+          emailError.innerHTML = "Please check your email";
+          emailField.style.borderColor = "red";
+         
+          return false;
+        }
+          emailError.innerHTML = "";
+          return true;
+    }
+
+    function validateEmail2(){
+      var emailError= document.getElementById("emailError2");
+    var emailField= document.getElementById("emailField2");
+      if(!emailField2.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+
+          emailError2.innerHTML = "Please check your email";
+          emailField2.style.borderColor = "red";
+          return false;
+        }
+          emailError2.innerHTML = "";
+          return true;
+    }
+
+
+  </script>
 </body>
 </html>
+
